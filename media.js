@@ -8,10 +8,10 @@ form.addEventListener("submit", (e) =>{
     e.preventDefault()
 
     const nome = form.innome.value 
-    const notal = number(form.innotal.value)
+    const nota1 = number(form.innotal.value)
     const nota2 = number(form.innota2.value)
 
-    const media = (notal + notal2)/2
+    const media = (nota1 + nota2)/2
     resp1.innertext = 'média das notas ${media.tofixed(2))}'
 
     if(media >=7){
