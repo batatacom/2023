@@ -4,21 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Triângulo</title>
+    <title>Lados de Triângulo</title>
 </head>
 <body>
     <img src="img/exerc.jpg">
     <h1>Lados de um triângulo</h1>
     <form>
         <p> lado A:
-            <input type="number" required>
+            <input type="number" id="inladoA" required>
         </p>
         <p> lado B:
-            <input type="number" required>
+            <input type="number" id="inladoB" required>
         </p>
         <p> lado C:
-            <input type="number" required>
+            <input type="number" id="inladoC" required>
         </p>
+        <input type="submit" value="verificar lados">
     </form>
+    <h3 id="outResp"></h3>
+    <h3 id="outResp1"></h3>
+    <script src="triangulo.js"></script>
+
 </body>
 </html>

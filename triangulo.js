@@ -1,15 +1,13 @@
 const form = document.querySelector("form")
-const resp = document.querySelector("h3")
-("#outResp")
-const resp1 =- document.querySelector
-("#outResp1")
+const resp = document.querySelector("#outResp")
+const resp1 =- document.querySelector("#outResp1")
 
 form.addEventListener ("submit", (e) =>{
     e.preventDefault()
 
-    const ladoA = number(form.inladoA.value)
-    const ladoB = number(form.inladoB.value)
-    const ladoC = number(form.inladoC.value)
+    const ladoA = Number(form.inladoA.value)
+    const ladoB = Number(form.inladoB.value)
+    const ladoC = Number(form.inladoC.value)
 
     if((ladoA > ladoB + ladoC) || (ladoB > ladoA + ladoC) || (ladoC > ladoA + ladoB)){
         alert("As medidas não formam um triângulo pois um dos lados não pode ser maior que a soma dos outro dois.")
