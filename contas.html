@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contas do mês</title>
+</head>
+<body>
+    <img src="img/contas.jpg" alt="exercícios">
+    <h1>Programa Contas do Mês</h1>
+    <form>
+        <p>Descrição da Conta:
+            <input type="text" min="5" id="indescricao" required>
+        </p>
+        <p>Valor a Pagar R$:
+            <input type="number" min="0" step="0.01" id="invalor" required>
+        </p>
+        <input type="submit" value="registrar conta">
+    </form>
+    <pre id="outresp1"></pre>
+    <pre id="outresp2"></pre>
+    <script src="contas.js"></script>
+</body>
+</html>
